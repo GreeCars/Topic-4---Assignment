@@ -2,9 +2,9 @@
 // Carsen
 using System.Diagnostics;
 
-string name, firstName, lastName, login, name2;
+string name, firstName, lastName, login;
 int age, grade, studentID, age2;
-double salary, average;
+double salary, average, number1, number2, number3;
 
 //Console.WriteLine("Hello. What is your name?");
 //name = Console.ReadLine();
@@ -38,7 +38,16 @@ Console.WriteLine();
 Console.WriteLine();
 
 Console.WriteLine("Hello. What is your name?");
-name2 = Console.ReadLine();
-Console.WriteLine("Hi, " + name2 + "! How old are you?");
-age2 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Did you know that in five years you will be " + (age2 + 5) + " years old? And five years ago you were " + (age2 - 5) + " years old.");
+name = Console.ReadLine();
+Console.WriteLine("Hi, " + name + "! How old are you?");
+age = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Did you know that in five years you will be " + (age + 5) + " years old? And five years ago you were " + (age - 5) + " years old.");
+Console.WriteLine();
+
+Console.WriteLine("Please enter a number:");
+Double.TryParse(Console.ReadLine(), out number1);
+Console.WriteLine("Please enter another number:");
+Double.TryParse(Console.ReadLine(), out number2);
+Console.WriteLine("Please enter a final number:");
+Double.TryParse(Console.ReadLine(), out number3);
+Console.WriteLine("Your selected");
